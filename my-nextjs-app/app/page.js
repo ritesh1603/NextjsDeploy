@@ -6,7 +6,7 @@ export default function Home() {
   const [message, setMessage] = useState('Loading...');
 
   useEffect(() => {
-    fetch('/apinext/hello')
+    fetch('/api/hello')
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
